@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,600,700,700i,900");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Raleway, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: rgb(78, 78, 78);
+}
+
+.container {
+  width: 75%;
+  margin: auto;
+  overflow: hidden;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px;
+}
+
+/*************************HEADER**************************/
+
+header {
+  top: 0;
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+  background: #ffffff;
+  padding-bottom: 10px;
+  min-height: auto;
+  border-bottom: 3px solid rgb(78, 78, 78);
+  z-index: 1;
+}
+
+header #logo {
+  float: left;
+}
+
+header #logo h1 {
+  margin: 0;
+}
+
+header a {
+  color: rgb(78, 78, 78);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+header li {
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+
+header nav {
+  float: right;
+  margin-top: 10px;
+}
+
+header a:hover {
+  color: rgb(12, 12, 12);
+  font-size: 18px;
+}
+
+/*************************ABOUT**************************/
+#about {
+  min-height: 500px;
+  text-align: center;
+  padding-top: 25px;
+}
+
+#about h1 {
+  font-size: 55px;
+  text-align: center;
+}
+
+#about #video {
+  width: 100%;
+  margin-bottom: 5px;
+  z-index: 0;
+}
+
+/*************************SERVICES**************************/
+#services {
+  min-height: 500px;
+  text-align: center;
+  padding-top: 25px;
+}
+
+#services .services {
+  display: flex;
+  text-align: center;
+  width: 75%;
+  margin: auto;
+}
+
+#services h1 {
+  text-align: center;
+  font-size: 55px;
+}
+
+/*************************CONTACT**************************/
+#contact {
+  min-height: 500px;
+  text-align: center;
+  padding-top: 25px;
+  font-size: 24px;
+  width: 75%;
+  margin: auto;
+}
+
+#contact input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+#contact input[type="submit"] {
+  background-color: rgb(12, 12, 12);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#contact input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+#contact .form-container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+#contact h1 {
+  font-size: 55px;
+  text-align: center;
+}
+
+/*************************FOOTER**************************/
+footer {
+  padding-top: 5px;
+  min-height: 30px;
+  border-top: 3px solid rgb(78, 78, 78);
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(12, 12, 12);
+}
+
+/*************************MEDIA QUERY**************************/
+@media screen and (max-width: 500px) {
+  #services .services {
+    flex-direction: column;
+  }
+
+  header #logo,
+  header nav,
+  header nav li {
+    float: none;
+    text-align: center;
+    width: 100%;
+    margin: 0 5px 0;
+    padding: 0;
+  }
+
+  #about h1,
+  #services h1,
+  #contact h1 {
+    padding-top: 25px;
+  }
+
+  #contact {
+    width: 100%;
+    margin: 0;
+  }
+}

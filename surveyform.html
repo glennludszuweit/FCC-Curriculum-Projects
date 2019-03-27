@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/survey.css" />
+    <title>Umfrageformular</title>
+  </head>
+
+  <body>
+    <header>
+      <h1 id="title">Umfrageformular</h1>
+    </header>
+    <main>
+      <div class="container">
+        <p id="description">
+          Teilen Sie uns mit, wie wir freeCodeCamp verbessern können
+        </p>
+        <form id="survey-form">
+          <!--Main Bio-->
+          <div class="form-group">
+            <label class="info-frage" for="name" id="name-label">Name</label>
+            <span class="info-antwort"
+              ><input
+                class="bio"
+                type="text"
+                id="name"
+                placeholder="Namen hier eingeben"
+                required
+            /></span>
+          </div>
+          <div class="form-group">
+            <label class="info-frage" for="email" id="email-label">Email</label>
+            <span class="info-antwort"
+              ><input
+                class="bio"
+                type="email"
+                id="email"
+                placeholder="E-Mail hier eingeben"
+                required
+            /></span>
+          </div>
+          <div class="form-group">
+            <label class="info-frage" for="alter" id="number-label"
+              >Alter</label
+            >
+            <span class="info-antwort"
+              ><input
+                class="bio"
+                type="number"
+                id="number"
+                min="16"
+                max="85"
+                placeholder="Alter"
+                required
+            /></span>
+          </div>
+          <!--First Dropdown-->
+          <div class="info-frage">
+            <label>Derzeitige Beschäftigung</label>
+          </div>
+          <div class="info-antwort">
+            <select id="dropdown">
+              <option enable value="dp-role" id="dp-role"
+                >Position Auswählen</option
+              >
+              <option value="dp-role" id="dp-role">Vollzeit-Student</option>
+              <option value="dp-role" id="dp-role">Arbeitender Student</option>
+              <option value="dp-role" id="dp-role">Vollzeit Arbeiten</option>
+              <option value="dp-role" id="dp-role">lieber nicht sagen</option>
+              <option value="dp-role" id="dp-role">andere</option>
+            </select>
+          </div>
+          <!--Radio Buttons-->
+          <div class="radio-btn">
+            <label class="info-frage" name="radio"
+              >Wie würden Sie FCC empfehlen</label
+            >
+            <ul class="info-antwort">
+              <li class="radio">
+                <input name="radio" value="radio" type="radio" /> Bestimmt
+              </li>
+              <li class="radio">
+                <input name="radio" value="radio" type="radio" /> Könnte sein
+              </li>
+              <li class="radio">
+                <input name="radio" value="radio" type="radio" /> Nicht sicher
+              </li>
+              <li class="radio">
+                <input name="radio" value="radio" type="radio" /> Nie
+              </li>
+            </ul>
+          </div>
+          <!--Second Dropdown-->
+          <div class="info-frage">
+            <label>Derzeitige Beschäftigung</label>
+          </div>
+          <div class="info-antwort">
+            <select id="dropdown">
+              <option enable value="dp-role" id="dp-role"
+                >Position Auswählen</option
+              >
+              <option value="dp-role" id="dp-role">Vollzeit-Student</option>
+              <option value="dp-role" id="dp-role">Arbeitender Student</option>
+              <option value="dp-role" id="dp-role">Vollzeit Arbeiten</option>
+              <option value="dp-role" id="dp-role">lieber nicht sagen</option>
+              <option value="dp-role" id="dp-role">andere</option>
+            </select>
+          </div>
+          <!--Checkbox-->
+          <div class="radio-btn">
+            <label class="info-frage" for="chkbox"
+              >Zukünftige Verbesserungen</label
+            >
+            <ul class="info-antwort">
+              <li class="checkbox">
+                <input id="checkbox" value="checkbox" type="checkbox" />
+                Frontend-Projekte
+              </li>
+              <li class="checkbox">
+                <input id="checkbox" value="checkbox" type="checkbox" />
+                Back-End-Projekte
+              </li>
+              <li class="checkbox">
+                <input id="checkbox" value="checkbox" type="checkbox" />
+                Datenvisualisierung
+              </li>
+              <li class="checkbox">
+                <input id="checkbox" value="checkbox" type="checkbox" />
+                Herausforderungen
+              </li>
+              <li class="checkbox">
+                <input id="checkbox" value="checkbox" type="checkbox" /> Open
+                Source Community
+              </li>
+              <li class="checkbox">
+                <input id="checkbox" value="checkbox" type="checkbox" /> Gitter
+                helfen Räume
+              </li>
+              <li class="checkbox">
+                <input id="checkbox" value="checkbox" type="checkbox" /> Videos
+              </li>
+              <li class="checkbox">
+                <input id="checkbox" value="checkbox" type="checkbox" />
+                Meetings in der Stadt
+              </li>
+              <li class="checkbox">
+                <input id="checkbox" value="checkbox" type="checkbox" />
+                Wikipedia
+              </li>
+              <li class="checkbox">
+                <input id="checkbox" value="checkbox" type="checkbox" /> Forum
+              </li>
+              <li class="checkbox">
+                <input id="checkbox" value="checkbox" type="checkbox" />
+                Zusätzliche Kurse
+              </li>
+            </ul>
+          </div>
+          <!--Text Area-->
+          <div class="values">
+            <label class="info-frage">Anmerkungen oder Vorschläge</label>
+            <textarea
+              class="info-antwort"
+              placeholder=" Bitte schreiben Sie hier......."
+            ></textarea>
+          </div>
+          <button id="submit" type="submit">Submit</button>
+        </form>
+      </div>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
